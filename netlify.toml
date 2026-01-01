@@ -1,4 +1,5 @@
 [build]
-base = "marketing-site"
 command = "npm run build"
-publish = "dist"
+
+[[plugins]]
+package = "@netlify/plugin-nextjs"
