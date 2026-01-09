@@ -41,14 +41,27 @@ function Page(props) {
 
 export function getStaticPaths() {
     const data = allContent();
-    const paths = resolveStaticPaths(data);
+    const urlPaths = resolveStaticPaths(data);
+    // Next.js expects `params` objects for dynamic routes like `[[...slug]]`.
+    const paths = (urlPaths ?? [])
+        .filter(Boolean)
+        .map((urlPath) => {
+            if (typeof urlPath !== 'string') {
+                return urlPath;
+            }
+            const trimmed = urlPath.replace(/^\/|\/$/g, '');
+            const slug = trimmed ? trimmed.split('/').filter(Boolean) : [];
+            return { params: { slug } };
+        });
+
     return { paths, fallback: false };
 }
 
 export async function getStaticProps({ params }) {
     const data = allContent();
-    const urlPath = '/' + (params.slug || []).join('/');
-    const props = await resolveStaticProps(urlPath, data);
+    const slugSegments = Array.isArray(params?.slug) ? params.slug : params?.slug ? [params.slug] : [];
+    const urlPath = '/' + slugSegments.join('/');
+    const props = await resolveStaticProps(urlPath || '/', data);
     return { props };
 }
 
