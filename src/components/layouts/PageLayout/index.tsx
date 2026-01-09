@@ -11,7 +11,7 @@ export default function PageLayout(props) {
 
     return (
         <BaseLayout page={page} site={site}>
-            <main id="main" className="sb-layout sb-page-layout">
+            <main id="main" className="sb-layout sb-page-layout" {...(enableAnnotations && { 'data-sb-object-id': page.__metadata?.id })}>
                 {title && (
                     <h1 className="sr-only" {...(enableAnnotations && { 'data-sb-field-path': 'title' })}>
                         {title}
