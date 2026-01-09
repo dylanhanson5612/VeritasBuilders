@@ -16,7 +16,7 @@ export default function PostLayout(props) {
 
     return (
         <BaseLayout page={page} site={site}>
-            <main id="main" className="sb-layout sb-post-layout">
+            <main id="main" className="sb-layout sb-post-layout" {...(enableAnnotations && { 'data-sb-object-id': page.__metadata?.id })}>
                 <article className="px-4 py-16 sm:py-28">
                     <div className="mx-auto max-w-screen-2xl">
                         <header className="max-w-4xl mx-auto mb-12 text-center">
