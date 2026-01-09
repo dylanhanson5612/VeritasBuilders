@@ -39,9 +39,25 @@ npm install -g @stackbit/cli
 stackbit dev
 ```
 
+Alternatively, install the Visual Editor CLI locally (recommended for consistent versions across a team):
+
+```txt
+npm install --save-dev @stackbit/cli
+npm run stackbit:dev
+```
+
 This outputs your own Netlify visual editor URL. Open this, register, or sign in, and you will be directed to Netlify's visual editor for your new project.
 
 ![Next.js Dev + Visual Editor Dev](https://assets.stackbit.com/docs/next-dev-stackbit-dev.png)
+
+## Netlify CLI (optional)
+
+The Netlify CLI is included as a project dependency. If it is not present, install it and run the site using Netlify’s local dev server (useful for Netlify feature emulation):
+
+```txt
+npm install netlify-cli
+npm run netlify:dev
+```
 
 ## Building for production
 
