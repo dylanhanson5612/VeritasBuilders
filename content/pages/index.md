@@ -9,7 +9,7 @@ sections:
       type: TitleBlock
     subtitle: Serving DC, MD, and VA
     text: >
-      Veritas Builders specializes in creating luxury residences over 5000 square feet on minimum 1-acre lots. 
+      Veritas Builders specializes in creating luxury residences over 5000 square feet on minimum 1-acre lots.
       We focus on beautiful yards, hardscape, expansive glass, solar panels, and stone facades.
     actions:
       - label: Contact Us
@@ -22,14 +22,20 @@ sections:
         elementId: ''
         type: Button
     media:
-      url: /images/main-hero.jpg
-      altText: Modern Home
+      url: https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=90&fit=crop
+      altText: Luxurious modern home exterior with floor-to-ceiling glass and stone facade at dusk
       elementId: ''
       type: ImageBlock
     badge:
       label: New Company
       color: text-primary
       type: Badge
+    backgroundImage:
+      url: https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1920&q=80&fit=crop
+      backgroundSize: cover
+      backgroundPosition: center
+      backgroundRepeat: no-repeat
+      opacity: 8
     elementId: ''
     colors: bg-light-fg-dark
     styles:
@@ -75,9 +81,9 @@ sections:
             textAlign: left
         image:
           type: ImageBlock
-          altText: Glass House Project
+          altText: Modern luxury home with expansive floor-to-ceiling glass walls and warm interior lighting
           elementId: ''
-          url: /images/abstract-feature1.svg
+          url: https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=90&fit=crop
           styles:
             self:
               borderRadius: x-large
@@ -87,8 +93,8 @@ sections:
           Situated on 2 acres, this estate features a magnificent stone facade, 
           extensive hardscaping with a custom pool, and sustainable landscaping.
         image:
-          url: /images/abstract-feature2.svg
-          altText: Stone Creek Estate
+          url: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=90&fit=crop
+          altText: Elegant stone facade estate with manicured landscaping and modern pool area
           elementId: ''
           type: ImageBlock
         actions: []
@@ -111,8 +117,8 @@ sections:
           A net-zero energy home with a 15kW solar system. Modern design with 
           warm wood accents and a 3-acre beautifully manicured yard.
         image:
-          url: /images/abstract-feature3.svg
-          altText: Solar Horizon Project
+          url: https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=90&fit=crop
+          altText: Modern sustainable home with clean lines and contemporary architecture
           elementId: ''
           type: ImageBlock
         actions: []
@@ -137,6 +143,12 @@ sections:
       type: Badge
     variant: three-col-grid
     colors: bg-neutral-fg-dark
+    backgroundImage:
+      url: https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1920&q=80&fit=crop
+      backgroundSize: cover
+      backgroundPosition: center
+      backgroundRepeat: no-repeat
+      opacity: 5
     styles:
       self:
         padding:
@@ -161,9 +173,9 @@ sections:
     actions: []
     media:
       title: Modern Construction
-      url: /images/hero2.svg
+      url: https://images.unsplash.com/photo-1600573472591-ee6c563aaec3?w=800&q=90&fit=crop
       type: ImageBlock
-      altText: Construction
+      altText: Elegant modern interior with high ceilings and contemporary design
       styles:
         self:
           padding:
@@ -173,6 +185,12 @@ sections:
             - pr-2
     elementId: about
     colors: bg-light-fg-dark
+    backgroundImage:
+      url: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1920&q=80&fit=crop
+      backgroundSize: cover
+      backgroundPosition: center
+      backgroundRepeat: no-repeat
+      opacity: 6
     styles:
       self:
         flexDirection: row
@@ -241,6 +259,12 @@ sections:
       type: Badge
     elementId: contact
     colors: bg-light-fg-dark
+    backgroundImage:
+      url: https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=1920&q=80&fit=crop
+      backgroundSize: cover
+      backgroundPosition: center
+      backgroundRepeat: no-repeat
+      opacity: 5
     styles:
       self:
         flexDirection: row
@@ -250,7 +274,7 @@ sections:
 seo:
   metaTitle: Veritas Builders - High End Modern Homes
   metaDescription: Specializing in high end, sustainably built, modern homes in DC, MD and VA.
-  socialImage: /images/main-hero.jpg
+  socialImage: https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=90&fit=crop
   type: Seo
 type: PageLayout
 ---
