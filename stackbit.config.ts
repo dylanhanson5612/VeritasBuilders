@@ -18,6 +18,7 @@ export const config = defineStackbitConfig({
     stackbitVersion: '~0.7.0',
     ssgName: 'nextjs',
     nodeVersion: '18',
+    devCommand: 'node_modules/.bin/next dev -- --port {PORT} --hostname 127.0.0.1',
     styleObjectModelName: 'ThemeStyle',
     contentSources: [gitContentSource],
     presetSource: {
