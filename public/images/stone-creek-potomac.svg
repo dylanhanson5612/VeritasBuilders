@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Stone Creek estate in Potomac, MD</title>
+  <desc id="desc">Modern farmhouse with stone facade, black steel accents, and white concrete surfaces.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#edf1f5" />
+      <stop offset="100%" stop-color="#c7d0d9" />
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#b3bcb5" />
+      <stop offset="100%" stop-color="#9aa59f" />
+    </linearGradient>
+    <pattern id="stone" width="28" height="24" patternUnits="userSpaceOnUse">
+      <rect width="28" height="24" fill="#c6c1ba" />
+      <rect x="2" y="2" width="10" height="7" fill="#b4afa8" />
+      <rect x="14" y="4" width="12" height="6" fill="#a9a49c" />
+      <rect x="4" y="12" width="9" height="7" fill="#bdb8b1" />
+      <rect x="16" y="13" width="10" height="8" fill="#9f9a92" />
+    </pattern>
+  </defs>
+  <rect width="1200" height="900" fill="url(#sky)" />
+  <rect y="640" width="1200" height="260" fill="url(#ground)" />
+
+  <rect x="140" y="380" width="920" height="260" fill="#f4f4f2" />
+  <rect x="140" y="380" width="920" height="18" fill="#101214" />
+  <rect x="180" y="410" width="360" height="210" fill="url(#stone)" stroke="#2e3135" stroke-width="4" />
+  <rect x="560" y="410" width="320" height="150" fill="#e9ecef" stroke="#1c2024" stroke-width="5" />
+  <rect x="900" y="410" width="120" height="210" fill="url(#stone)" stroke="#2e3135" stroke-width="4" />
+
+  <rect x="560" y="430" width="320" height="12" fill="#b68a2e" />
+  <rect x="560" y="560" width="320" height="12" fill="#111214" />
+
+  <rect x="220" y="650" width="740" height="20" fill="#1b1e22" />
+  <rect x="250" y="670" width="680" height="8" fill="#d0d3d7" />
+</svg>
