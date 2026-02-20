@@ -13,11 +13,13 @@ const dataDir = 'content/data';
 
 const allReferenceFields = {};
 Object.entries(allModels).forEach(([modelName, model]) => {
-    model.fields.forEach((field) => {
-        if (field.type === 'reference' || (field.type === 'list' && field.items?.type === 'reference')) {
-            allReferenceFields[modelName + ':' + field.name] = true;
-        }
-    });
+    if ('fields' in model && Array.isArray(model.fields)) {
+        model.fields.forEach((field) => {
+            if (field.type === 'reference' || (field.type === 'list' && field.items?.type === 'reference')) {
+                allReferenceFields[modelName + ':' + field.name] = true;
+            }
+        });
+    }
 });
 
 function isRefField(modelName: string, fieldName: string) {
