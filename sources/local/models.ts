@@ -1,19 +1,13 @@
-// This is a basic model structure for Stackbit
+// Basic model definitions for Stackbit configuration
 
-export interface Model {
-    id: string;
-    name: string;
-    properties?: Record<string, any>;
-}
-
-export class StackbitModel implements Model {
-    id: string;
-    name: string;
-    properties?: Record<string, any>;
-
-    constructor(id: string, name: string, properties?: Record<string, any>) {
-        this.id = id;
-        this.name = name;
-        this.properties = properties;
-    }
-}
+export const allModels = {
+    model1: {
+        name: 'Model 1',
+        description: 'Description for model 1',
+    },
+    model2: {
+        name: 'Model 2',
+        description: 'Description for model 2',
+    },
+    // Add more models as needed
+};
